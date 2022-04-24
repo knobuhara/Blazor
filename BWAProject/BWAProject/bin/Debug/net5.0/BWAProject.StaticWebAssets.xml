@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="/Volumes/Data/src/visualStudio/BWAProject/BWAProject/bin/Debug/net5.0/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/Volumes/Data/src/visualStudio/BWAProject/BWAProject/obj/Debug/net5.0/scopedcss/bundle/" />
+</StaticWebAssets>

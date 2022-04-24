@@ -1,0 +1,143 @@
+﻿@page "/nobuhara"
+
+@*カレンダー表示領域*@
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col">
+            <button @onclick="Prev">先月</button>
+        </div>
+        <div class="text-center col-6">
+            @calendar.Year 年 @calendar.Month 月
+        </div>
+        <div class="col">
+            <button @onclick="Next">翌月</button>
+        </div>
+    </div>
+    <div class="row" style="height: 70px;">
+        <div class="h-100 text-center col border">日</div>
+        <div class="h-100 text-center col border">月</div>
+        <div class="h-100 text-center col border">火</div>
+        <div class="h-100 text-center col border">水</div>
+        <div class="h-100 text-center col border">木</div>
+        <div class="h-100 text-center col border">金</div>
+        <div class="h-100 text-center col border">土</div>
+    </div>
+    @for (int i = 0; i < 6; i++)
+    {
+        <div class="row" style="height: 70px;">
+            @for (int j = 0; j < 7; j++)
+            {
+                var index = i == 0 ? j : i * 7 + j;
+                var date = dates[index];
+                <div id="@date.Id"
+                     class="h-100 text-center col justify-content-center border @date.Class"
+                     @onclick="@(() => ClickDate(date))">
+                    @date.DateTime.Day
+                </div>
+            }
+        </div>
+    }
+</div>
+@*カレンダー表示領域*@
+@*クリックされた日付リスト表示領域*@
+<div class="container">
+    @foreach (var clickDate in clickDates)
+    {
+        <div class="row">
+            <div class="col">
+                @($"{clickDate.Year}年 {clickDate.Month}月 {clickDate.Day}日 がクリックされました。")
+            </div>
+        </div>
+    }
+</div>
+@*クリックされた日付リスト表示領域*@
+
+@code {
+    /// <summary>
+    /// カレンダー日付リスト
+    /// </summary>
+    List<Date> dates = new List<Date>();
+
+    /// <summary>
+    /// 今日
+    /// </summary>
+    DateTime today = DateTime.Today;
+
+    /// <summary>
+    /// カレンダー切り替え用日付
+    /// </summary>
+    DateTime calendar = DateTime.Today;
+
+    /// <summary>
+    /// クリックされた日付リスト
+    /// </summary>
+    List<DateTime> clickDates = new List<DateTime>();
+
+    protected override void OnInitialized()
+    {
+        Init();
+    }
+
+    private void Init()
+    {
+        // 今月の1日を作成
+        var first = new DateTime(calendar.Year, calendar.Month, 1);
+
+        // カレンダー上の始めの日付
+        var firstDateOfCalendar = new DateTime();
+        switch (first.DayOfWeek)
+        {
+            case DayOfWeek.Sunday:
+                firstDateOfCalendar = first;
+                break;
+            case DayOfWeek.Monday:
+                firstDateOfCalendar = first.AddDays(-1);
+                break;
+            case DayOfWeek.Tuesday:
+                firstDateOfCalendar = first.AddDays(-2);
+                break;
+            case DayOfWeek.Wednesday:
+                firstDateOfCalendar = first.AddDays(-3);
+                break;
+            case DayOfWeek.Thursday:
+                firstDateOfCalendar = first.AddDays(-4);
+                break;
+            case DayOfWeek.Friday:
+                firstDateOfCalendar = first.AddDays(-5);
+                break;
+            case DayOfWeek.Saturday:
+                firstDateOfCalendar = first.AddDays(-6);
+                break;
+        }
+
+        dates.Clear();
+        for (int i = 0; i < 42; i++)
+        {
+            var date = new Date
+            {
+                DateTime = firstDateOfCalendar.AddDays(i)
+            };
+            if (date.DateTime.Date == today.Date) { date.Class += "bg-primary"; }
+            dates.Add(date);
+        }
+    }
+
+    private void Prev()
+    {
+        calendar = calendar.AddMonths(-1);
+        Init();
+        StateHasChanged();
+    }
+
+    private void Next()
+    {
+        calendar = calendar.AddMonths(1);
+        Init();
+        StateHasChanged();
+    }
+
+    private void ClickDate(Date date)
+    {
+        clickDates.Add(date.DateTime);
+    }
+}

@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{8D67C614-A0A5-4C97-B33F-2F1ACFFE5CB7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BWAProject/Pages/FetchData.razor">
+    <Files>
+      <File FileName="BWAProject/Pages/Index.razor" Line="26" Column="21" />
+      <File FileName="BWAProject/Pages/ViewModel.cs" />
+      <File FileName="BWAProject/Pages/Nobuhara.razor" />
+      <File FileName="BWAProject/Pages/FetchData.razor" Line="21" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BWAProject" expanded="True">
+            <Node name="BWAProject" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="FetchData.razor" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True">
+                <Node name="MainLayout.razor" expanded="True" />
+                <Node name="NavMenu.razor" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="sample-data" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BWAProject PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

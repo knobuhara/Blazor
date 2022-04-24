@@ -1,0 +1,84 @@
+﻿@page "/"
+@inherits BWAProject.Pages.ViewModel
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<div class="card">
+    <div class="card-header">テーブルの題名</div>
+    <div class="col-12 ml-3">
+        <table class="table table-responsive" style="white-space: nowrap">
+            <!--
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>氏名</th>
+            <th>得意言語</th>
+        </tr>
+    </thead>
+    -->
+            <tbody>
+                @for (int i = 0; i < count; i++)
+                {
+                <tr>
+                    @for (int j = 0; j < 3; j++)
+                    {
+                        @if (num < total)
+                        {
+                            <td>@num</td>
+                            <td>@GetInfoList()[num]["name"]</td>
+                            <td>@GetInfoList()[num]["shift"]</td>
+                            <!--
+                            <td>@num</td>
+                            <td>エンジニア(@num)</td>
+                            <td>PHP</td>
+                            -->
+                            num++;
+                        }
+                    }
+                </tr>
+                }
+            </tbody>
+    <!--
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>エンジニア1</td>
+                <td>PHP</td>
+                <td>5</td>
+                <td>エンジニア5</td>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>エンジニア2</td>
+                <td>Ruby</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>エンジニア3</td>
+                <td>VBA</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>エンジニア4</td>
+                <td>JAVA</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>エンジニア5</td>
+                <td>Python</td>
+            </tr>
+        </tbody>
+    -->
+        </table>
+        </div>
+    </div>
+@code{
+    int total => GetInfoListCount();
+    int count => total % 3 == 0 ? total / 3 : total / 3 + 1;
+    int num = 0;
+}
