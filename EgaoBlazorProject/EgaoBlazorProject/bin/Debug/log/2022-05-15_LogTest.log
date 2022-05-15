@@ -1,0 +1,49 @@
+﻿2022-05-15 09:22:32.9617 INFO [1] init main
+2022-05-15 09:22:34.6205 INFO [1] Now listening on: http://localhost:5000
+2022-05-15 09:22:34.6272 INFO [1] Application started. Press Ctrl+C to shut down.
+2022-05-15 09:22:34.6272 INFO [1] Hosting environment: Development
+2022-05-15 09:22:34.6272 INFO [1] Content root path: /Volumes/Data/src/visualStudio/EgaoBlazorProject/EgaoBlazorProject
+2022-05-15 09:22:39.4326 INFO [4] Information level log write.1
+2022-05-15 09:22:39.4335 WARN [4] Warning level log write.1
+2022-05-15 09:22:39.4351 ERROR [4] Error level log write.1
+2022-05-15 09:22:39.8322 INFO [8] Information level log write.2
+2022-05-15 09:22:39.8327 WARN [8] Warning level log write.2
+2022-05-15 09:22:39.8342 ERROR [8] Error level log write.2
+2022-05-15 09:22:40.1068 INFO [9] Information level log write.3
+2022-05-15 09:22:40.1068 WARN [9] Warning level log write.3
+2022-05-15 09:22:40.1086 ERROR [9] Error level log write.3
+2022-05-15 09:23:07.7880 INFO [4] Information level log write.4
+2022-05-15 09:23:07.7891 WARN [4] Warning level log write.4
+2022-05-15 09:23:07.7907 ERROR [4] Error level log write.4
+2022-05-15 09:23:08.0085 INFO [9] Information level log write.5
+2022-05-15 09:23:08.0093 WARN [9] Warning level log write.5
+2022-05-15 09:23:08.0108 ERROR [9] Error level log write.5
+2022-05-15 09:23:08.2334 INFO [12] Information level log write.6
+2022-05-15 09:23:08.2334 WARN [12] Warning level log write.6
+2022-05-15 09:23:08.2356 ERROR [12] Error level log write.6
+2022-05-15 09:23:08.3798 INFO [4] Information level log write.7
+2022-05-15 09:23:08.3804 WARN [4] Warning level log write.7
+2022-05-15 09:23:08.3819 ERROR [4] Error level log write.7
+2022-05-15 09:23:08.5748 INFO [9] Information level log write.8
+2022-05-15 09:23:08.5753 WARN [9] Warning level log write.8
+2022-05-15 09:23:08.5753 ERROR [9] Error level log write.8
+2022-05-15 09:29:51.9261 INFO [1] init main
+2022-05-15 09:29:53.6368 INFO [1] Now listening on: http://localhost:5000
+2022-05-15 09:29:53.6436 INFO [1] Application started. Press Ctrl+C to shut down.
+2022-05-15 09:29:53.6436 INFO [1] Hosting environment: Development
+2022-05-15 09:29:53.6436 INFO [1] Content root path: /Volumes/Data/src/visualStudio/EgaoBlazorProject/EgaoBlazorProject
+2022-05-15 09:34:58.5977 INFO [1] init main
+2022-05-15 09:35:00.1053 INFO [1] Now listening on: http://localhost:5000
+2022-05-15 09:35:00.1127 INFO [1] Application started. Press Ctrl+C to shut down.
+2022-05-15 09:35:00.1127 INFO [1] Hosting environment: Development
+2022-05-15 09:35:00.1133 INFO [1] Content root path: /Volumes/Data/src/visualStudio/EgaoBlazorProject/EgaoBlazorProject
+2022-05-15 11:18:05.9726 INFO [1] init main
+2022-05-15 11:18:07.5972 INFO [1] Now listening on: http://localhost:5000
+2022-05-15 11:18:07.6054 INFO [1] Application started. Press Ctrl+C to shut down.
+2022-05-15 11:18:07.6058 INFO [1] Hosting environment: Development
+2022-05-15 11:18:07.6058 INFO [1] Content root path: /Volumes/Data/src/visualStudio/EgaoBlazorProject/EgaoBlazorProject
+2022-05-15 11:19:19.9513 INFO [1] init main
+2022-05-15 11:19:21.4301 INFO [1] Now listening on: http://localhost:5000
+2022-05-15 11:19:21.4392 INFO [1] Application started. Press Ctrl+C to shut down.
+2022-05-15 11:19:21.4392 INFO [1] Hosting environment: Development
+2022-05-15 11:19:21.4392 INFO [1] Content root path: /Volumes/Data/src/visualStudio/EgaoBlazorProject/EgaoBlazorProject

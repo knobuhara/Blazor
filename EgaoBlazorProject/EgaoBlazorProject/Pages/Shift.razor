@@ -1,0 +1,39 @@
+﻿@page "/shift"
+@inherits EgaoBlazorProject.Data.ShiftData
+
+<h1>Shift</h1>
+
+<div class="card">
+    <div class="card-header">テーブルの題名</div>
+    <div class="col-12 ml-3">
+        <table class="table table-responsive" style="white-space: nowrap">
+            <tbody>
+                @for (int i = 0; i < count; i++)
+                {
+                    <tr>
+                        @for (int j = 0; j < 3; j++)
+                        {
+                            @if (num < total)
+                            {
+                                <td>@num</td>
+                                <td>@GetInfoList()[num]["name"]</td>
+                                <td>@GetInfoList()[num]["shift"]</td>
+                                <!--
+                                <td>@num</td>
+                                <td>エンジニア(@num)</td>
+                                <td>PHP</td>
+                                -->
+                                num++;
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    int total => GetInfoListCount();
+    int count => total % 3 == 0 ? total / 3 : total / 3 + 1;
+    int num = 0;
+}
