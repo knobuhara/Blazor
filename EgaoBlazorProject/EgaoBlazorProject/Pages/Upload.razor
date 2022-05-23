@@ -66,7 +66,12 @@
                         // Excelファイルのシート名、セルの値取得まで。
                         worksheetNameList.Add(worksheet.Name);
                         _ResultList.Add("ワークシート名：" + worksheet.Name);
-                        _ResultList.Add("A1セル データ：" + worksheet.Cell("A1").GetString());
+                        //_ResultList.Add("A1セル データ：" + worksheet.Cell("A1").GetString());
+
+                        for (int i = 1; i <= worksheet.LastRowUsed().RowNumber(); i++)
+                        {
+                            _ResultList.Add("A" + i + "セル データ：" + worksheet.Cell(i, 1).Value);
+                        }
                     }
                 }
 
