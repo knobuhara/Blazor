@@ -11,5 +11,7 @@
   - Index.razor
   - Nobuhara.razor
 
-
 #### BlazorフレームワークでWebアプリを作成
+<img src="https://user-images.githubusercontent.com/88915966/173495403-ae6a84ec-9996-4ff7-9a26-67fd270e7faa.jpg">
+<img src="https://user-images.githubusercontent.com/88915966/173495682-b5f60d93-e499-4e02-8ed9-442ea34133b5.jpg">
+
